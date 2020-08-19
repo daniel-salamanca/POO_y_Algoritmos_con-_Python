@@ -21,6 +21,6 @@ if __name__ == "__main__":
     encontrado =busqueda_lineal(lista, objetivo)
     final = time.time()
     print(final - comienzo) 
-    
+
     print(lista)
     print(f'elemento {objetivo} { "esta"if encontrado else "no esta"} enla lista')
