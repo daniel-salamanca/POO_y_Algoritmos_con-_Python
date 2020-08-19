@@ -1,4 +1,4 @@
-import random
+import random, time
 
 def busqueda_lineal(lista, objetivo):
     match = False
@@ -17,7 +17,10 @@ if __name__ == "__main__":
 
     lista = [random.randint(0, 100) for i in range(tamano_de_lista) ]
 
+    comienzo = time.time()
     encontrado =busqueda_lineal(lista, objetivo)
-
+    final = time.time()
+    print(final - comienzo) 
+    
     print(lista)
     print(f'elemento {objetivo} { "esta"if encontrado else "no esta"} enla lista')
